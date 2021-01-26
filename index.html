@@ -14,15 +14,16 @@
       .presidents .roky {background-color: #D7CCC8;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      thead, .main  {border-bottom: 3px solid black;}      
     </style>
   </head>
   <body>
     <table class="presidents">
       <caption></caption>
       <thead>
-        <tr>
+        <tr>          
           <th>Od</th>
-          <th>Do</th>
+          <th>Do</th>        
           <th>Česko</th>
           <th>Slovensko</th>
           <th>Poznámka</th>
@@ -49,6 +50,7 @@
           <td>31.prosince 1992 zaniká Česko-Slovesnká Federativní Republika</td>        
         </tr>
       </tbody>
+      <tbody class="main">
       <tr>
         <th>1993</th>
         <th>1998</th>
@@ -98,10 +100,22 @@
         <td>Zuzana Čaputová</td>
         <td></td>        
       </tr>
-      <tbody>
-
       </tbody>
-
+      <tbody>
+      <tr>
+        <th colspan="2">Počet</th>
+        <td> 2+3</td>
+        <td>2+5</td>
+        <td></td>        
+      </tr>
+      </tbody>
+      <tfoot>
+      <colgroup>
+        <col class="roky" span="2">
+        <col class="cr">
+        <col class="sr">
+        <col>
+      </colgroup>
       </tfoot>
     </table>
   </body>
